@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="../dist/css/min/style.css">
+</head>
+
+<body>
+    <section class="section-button">
+        <form class="counter-box">
+            <input type="button" id="decrease" class="decrease-button" value="Turn left -">
+            <input type="button" id="increase" class="increase-button" value="Turn right +">
+        </form>
+        <form class="reset">
+            <input type="button" id="reset" class="reset-button" value="Reset button">
+        </form>
+        <form class="type-button">
+            <h2 class="type-text">Type number and click enter <br> to see the rotation:</h2>
+            <input type="number" id="value" value="0">
+            <button id="submit" class="submit-button" value="Click">Click</button>
+        </form>
+    </section>
+    <section class="section-square">
+        <div id="square" class="square">
+            <input type="text" id="score" class="score-button" value="0 degrees">
+        </div>
+    </section>
+
+    <script src="../dist/js/script.js"></script>
+</body>
+
+</html>
