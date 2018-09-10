@@ -5,6 +5,13 @@ $blueColor: #5498a9;
 $redColor: #f03829;
 $violetColor: #665f62;
 
+//Mixin
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
 * {
     box-sizing: border-box;
 }
@@ -19,10 +26,8 @@ h2 {
 .section-button {
     height: 60vh;
     background-color: $blueColor;
-    display: flex;
+    @include flexCenter;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     .counter-box {
         display: flex;
     }
@@ -31,9 +36,7 @@ h2 {
     }
     .type-button {
         margin: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flexCenter;
         .type-text {
             margin-right: 20px;
         }
@@ -72,9 +75,7 @@ input[type="number"] {
 }
 
 .section-square {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexCenter;
     height: calc(100vh - 60vh);
     background-color: $violetColor;
     .square {
