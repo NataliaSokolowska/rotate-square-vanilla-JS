@@ -45,9 +45,9 @@ function clickButton(e) {
 }
 
 function resetRotate() {
-    rotateBoth();
     btnText.value = 0;
     rotate = 0;
+    rotateBoth();
 }
 
 function rotateBoth() {
